@@ -1,0 +1,181 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+label {
+  color: #fff;
+  font-weight: 600;
+  padding: 15px;
+  display: inline-block;
+  border-radius: 3px 3px 0 0;
+  margin-bottom: -5px;
+  cursor: pointer
+}
+
+a,
+a:hover {
+  color: #fff;
+}
+.retreat{
+  margin-top: 10px;
+}
+.active a {
+  color: #107BFD;
+  cursor: pointer;
+}
+
+.disactiveText{
+  display: none;
+}
+.text {
+  margin-bottom: 40px;
+  width: 300px;
+  font-size: 1.1em;
+}
+.textUa{
+
+    margin-bottom: 66px;
+}
+.group {
+  margin-right: 70px;
+}
+
+.group iframe:first-child {
+  margin-bottom: 90px;
+}
+.inner-content{
+  margin-top: 100px;
+  display: flex;
+}
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  position: absolute;
+  bottom: -100px;
+  display: flex;
+  justify-content: center;
+  background: #33393F;
+  width: 100%;
+  color: white;
+  font-size: 1.2em;
+  margin: 0;
+}
+/* flag ua */
+.flagUa .line,
+.flagUa .line::after{
+  position: absolute;
+  width: 28px;
+  height: 9px;
+}
+.flagUa{
+  position: absolute;
+  right: 120px;
+  top: 35px;
+}
+.flagUa .line{
+  background: #0231E3;
+}
+.flagUa .line::after{
+  background: #FFFF02;
+  top: 9px;
+  content: '';
+}
+
+
+/* flag rus */
+.flagRu .line,
+.flagRu .line::after,
+.flagRu .line::before{
+  position: absolute;
+  width: 28px;
+  height: 6px;
+}
+.flagRu{
+  position: absolute;
+  right: 70px;
+  top: 35px;
+}
+.flagRu .line{
+  background: #FEFEFE;
+}
+.flagRu .line::after{
+  content: "";
+  background: #130FFD;
+  top: 6px;
+}
+.flagRu .line::before{
+  content: "";
+  background: #FE0302;
+  top: 12px;
+}
+@media only screen and (max-height:767px) {
+
+  .content{
+    margin-top: 10px
+  }
+}
+@media only screen and (max-height:520px) {
+
+  footer {
+    position: relative;
+    bottom: 0;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .textUa{
+
+    margin-bottom: 40px;
+  }
+  .inner-content{
+    display: block;  }
+  .group{
+    margin-right: 0;
+  }
+  .group iframe:first-child {
+    margin-bottom: 35px;
+  }
+  footer {
+    position: relative;
+    bottom: 0;
+  }
+  .group iframe{
+    margin-bottom: 35px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .flagUa{
+    position: relative;
+    left: 40%;
+    top: -5px;
+  }
+  .flagRu{
+    position: relative;
+    left: 52%;
+    top: -5px;
+  }
+  .retreat{
+    margin-top: 20px;
+  }
+  .text{
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .text{
+    width: 100%;
+  }
+  iframe{
+    width: 100%;
+    height: 200px;
+  }
+}

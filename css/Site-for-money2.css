@@ -1,0 +1,124 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+label {
+  color: #fff;
+  font-weight: 600;
+  padding: 15px;
+  display: inline-block;
+  border-radius: 3px 3px 0 0;
+  margin-bottom: -5px;
+  cursor: pointer
+}
+a,
+a:hover {
+  color: #fff;
+}
+.active > a {
+  color: #107BFD;
+  cursor: pointer;
+}
+.content{
+  display: flex;
+  justify-content: center;
+}
+.disactiveText{
+  display: none;
+}
+.group .links:not(first-child){
+  margin-top: 30px;
+}
+.links > a{
+  display: flex;
+  justify-content: center;
+  margin-top: -15px;
+  color: black;
+}
+.text{
+    width: 500px;
+}
+footer{
+  font-size: 1.2em;
+  position: relative;
+  bottom: -35px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background: #33393F;
+  width: 100%;
+}
+/* flag ua */
+.flagUa .line,
+.flagUa .line::after{
+  position: absolute;
+  width: 28px;
+  height: 9px;
+}
+.flagUa{
+  position: absolute;
+  right: 120px;
+  top: 35px;
+}
+.flagUa .line{
+  background: #0231E3;
+}
+.flagUa .line::after{
+  background: #FFFF02;
+  top: 9px;
+  content: '';
+}
+
+
+/* flag rus */
+.flagRu .line,
+.flagRu .line::after,
+.flagRu .line::before{
+  position: absolute;
+  width: 28px;
+  height: 6px;
+}
+.flagRu{
+  position: absolute;
+  right: 70px;
+  top: 35px;
+}
+.flagRu .line{
+  background: #FEFEFE;
+}
+.flagRu .line::after{
+  content: "";
+  background: #130FFD;
+  top: 6px;
+}
+.flagRu .line::before{
+  content: "";
+  background: #FE0302;
+  top: 12px;
+}
+@media only screen and (max-width: 767px) {
+  .text{
+    width: 100%;
+    padding: 5px;
+  }
+  .content{
+    margin-top: 30px
+  }
+.flagUa{
+  position: relative;
+  left: 40%;
+  top: -5px;
+}
+.flagRu{
+  position: relative;
+  left: 52%;
+  top: -5px;
+}
+}
